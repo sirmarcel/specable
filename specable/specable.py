@@ -37,7 +37,7 @@ class Specable:
         if cls.kind is None:
             return cls.__name__.lower()
         else:
-            return kind
+            return cls.kind
 
     @classmethod
     def get_namespace(cls):

@@ -10,7 +10,7 @@ import spaeti
 
 class TestIntegration(TestCase):
     def setUp(self):
-        self.beer_dict = {"spaeti/beer": {"volume": 0.5}}
+        self.beer_dict = {"spaeti/nicebeer": {"volume": 0.5}}
         self.lemonade_dict = {"outdoor/lemonade": {"volume": 0.3}}
         self.champagne_dict = {"spaeti.backroom/champagne": {"volume": 0.25}}
 
@@ -21,7 +21,7 @@ class TestIntegration(TestCase):
         self.assertEqual(beer.drink(), beer2.drink())
 
     def test_default_namespace(self):
-        beer = spaeti.from_dict({"beer": {"volume": 0.5}})
+        beer = spaeti.from_dict({"nicebeer": {"volume": 0.5}})
 
         self.assertEqual(beer.to_dict(), self.beer_dict)
 

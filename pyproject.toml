@@ -7,7 +7,7 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.7"
-PyYAML = "^5.4.1"
+PyYAML = "*"
 
 [tool.poetry.dev-dependencies]
 nose = "*"
